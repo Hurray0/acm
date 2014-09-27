@@ -1,4 +1,3 @@
-//一直WA，最后改用java了。。。求解救啊
 #include <stdio.h>
 #include <string.h>
 
