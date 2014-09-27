@@ -24,7 +24,7 @@ change_to_decimal(int* answer)
 		j = i;
 		while(carry)
 		{
-			answer[++j] += carry;
+			answer[++j] += carry%10;
 			carry /= 10;
 		}
 	}
@@ -39,7 +39,7 @@ int main()
 
 	while(scanf("%s",new_num) != EOF)
 	{
-		if(new_num[0]=='0' && new_num[1]=='\0')
+		if(new_num[0]=='0' && strlen(new_num)==1)
 			break;
 		add(answer,new_num);
 		for(i=0; i<124; i++)
