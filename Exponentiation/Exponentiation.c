@@ -5,7 +5,7 @@ int length;
 
 void multiply(int a[], int n)
 {
-	int i,j;
+	int i, j;
 	int a2[151] = {0};
 	int carry,temp;
 
